@@ -1,0 +1,53 @@
+commit 377579641f9c6ca24b525ef69ea06edf5e21a808
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:36:26+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:36:26+08:00
+
+    Q2: preserve blind repair evidence
+
+ evidence/REPORT.txt                       | 47 ++++++++++++++++++++++++++
+ evidence/after-ci-exit-code.txt           |  1 +
+ evidence/after-ci-tests.log               | 10 ++++++
+ evidence/after-exit-code.txt              |  1 +
+ evidence/after-tests.log                  | 10 ++++++
+ evidence/before-ci-exit-code.txt          |  1 +
+ evidence/before-ci-tests.log              | 55 +++++++++++++++++++++++++++++++
+ evidence/before-exit-code.txt             |  1 +
+ evidence/before-tests.log                 | 55 +++++++++++++++++++++++++++++++
+ evidence/calculator-after.py              | 15 +++++++++
+ evidence/calculator-before.py             | 15 +++++++++
+ evidence/diff-check-exit-code.txt         |  1 +
+ evidence/diff-check.log                   |  0
+ evidence/python-version.txt               |  1 +
+ evidence/repair.diff                      | 13 ++++++++
+ evidence/unchanged-files-after.json       | 18 ++++++++++
+ evidence/unchanged-files-before.json      | 18 ++++++++++
+ evidence/unchanged-files-verification.txt |  1 +
+ 18 files changed, 263 insertions(+)
+
+commit 66b2ce38583b3a7152cdef939ddcb5b7472b6e85
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:36:25+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:36:25+08:00
+
+    Q2: preserve first blind agent repair
+
+ calculator.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e776da3649fd13e903c05513d6d94db3eabf085a
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:33:07+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:33:07+08:00
+
+    Record supplied failing project
+
+ .github/workflows/ci.yml | 20 ++++++++++++++++++++
+ .gitignore               |  9 +++++++++
+ calculator.py            | 15 +++++++++++++++
+ tests/__init__.py        |  1 +
+ tests/test_calculator.py | 41 +++++++++++++++++++++++++++++++++++++++++
+ 5 files changed, 86 insertions(+)

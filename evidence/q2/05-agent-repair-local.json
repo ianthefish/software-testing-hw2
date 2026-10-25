@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-25T21:36:28.059294+08:00",
+  "cwd": "C:\\Users\\ianyu\\Desktop\\軟測2\\software-testing-hw2",
+  "command": [
+    "C:\\Users\\ianyu\\Desktop\\軟測2\\software-testing-hw2\\.venv\\Scripts\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "returncode": 0,
+  "sha256": {
+    "calculator.py": "b41108f8f8d97f108c8325892b85439ff99b2f65d2ff3cf84ff89e85a7d04558",
+    "tests/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tests/test_calculator.py": "82ba8901b4730961e1030919c4d22c318663ad26dbec24fccd089b7558e9af86"
+  }
+}

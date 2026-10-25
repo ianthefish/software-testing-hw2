@@ -1,0 +1,18 @@
+[
+  {
+    "Path": "C:\\Users\\ianyu\\Desktop\\軟測2\\q2-blind-repair\\tests\\test_calculator.py",
+    "Hash": "045C6C120A9BE3FB4366A4217550891050D732CDE3A283A78C54E1D340049618"
+  },
+  {
+    "Path": "C:\\Users\\ianyu\\Desktop\\軟測2\\q2-blind-repair\\tests\\__init__.py",
+    "Hash": "7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+  },
+  {
+    "Path": "C:\\Users\\ianyu\\Desktop\\軟測2\\q2-blind-repair\\.github\\workflows\\ci.yml",
+    "Hash": "1F9E715B81B43E3B0A051F4718F2BE03F122F790CD8A5A555362AE8F54B59405"
+  },
+  {
+    "Path": "C:\\Users\\ianyu\\Desktop\\軟測2\\q2-blind-repair\\.gitignore",
+    "Hash": "31EE8676AFBB0B0F22F0C25BFBF4A9C05F64FAC46A015AACFFD4D9A46BEABE69"
+  }
+]

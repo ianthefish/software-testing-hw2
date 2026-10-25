@@ -1,0 +1,78 @@
+[
+  {
+    "id": 40198132117,
+    "name": "Calculator CI",
+    "head_sha": "c921aec9b30b2c49a103824682a4225adf5be5e2",
+    "status": "completed",
+    "conclusion": "failure",
+    "html_url": "https://github.com/ianthefish/software-testing-hw2/actions/runs/40198132117",
+    "created_at": "2026-10-25T13:33:13Z",
+    "updated_at": "2026-10-25T13:33:20Z",
+    "jobs": [
+      {
+        "name": "test",
+        "status": "completed",
+        "conclusion": "failure",
+        "html_url": "https://github.com/ianthefish/software-testing-hw2/actions/runs/40198132117/job/121183322939",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-10-25T13:33:16Z",
+            "completed_at": "2026-10-25T13:33:17Z"
+          },
+          {
+            "name": "Run actions/checkout@v6",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-10-25T13:33:17Z",
+            "completed_at": "2026-10-25T13:33:17Z"
+          },
+          {
+            "name": "Run actions/setup-python@v6",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-10-25T13:33:17Z",
+            "completed_at": "2026-10-25T13:33:17Z"
+          },
+          {
+            "name": "Run calculator tests",
+            "status": "completed",
+            "conclusion": "failure",
+            "number": 4,
+            "started_at": "2026-10-25T13:33:17Z",
+            "completed_at": "2026-10-25T13:33:18Z"
+          },
+          {
+            "name": "Post Run actions/setup-python@v6",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 7,
+            "started_at": "2026-10-25T13:33:18Z",
+            "completed_at": "2026-10-25T13:33:18Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v6",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-10-25T13:33:18Z",
+            "completed_at": "2026-10-25T13:33:18Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9,
+            "started_at": "2026-10-25T13:33:18Z",
+            "completed_at": "2026-10-25T13:33:18Z"
+          }
+        ]
+      }
+    ]
+  }
+]

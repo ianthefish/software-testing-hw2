@@ -1,0 +1,47 @@
+Q2 盲修復實驗報告
+
+範圍：僅讀寫本專案 C:\Users\ianyu\Desktop\軟測2\q2-blind-repair。
+所有命令都在此專案目錄執行。未查看父資料夾、其他專案、外部 repository、先前聊天或其他實驗紀錄。
+Python：C:\Users\ianyu\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+實測版本：Python 3.12.14。
+
+原因與修復
+calculator.py 第 6 行，Calculator.subtract(a, b) 錯誤執行 return a + b。
+例如 subtract(9, 4) 實際回傳 13，但應為 5。
+僅將該行改為 return a - b。
+
+測試與結果
+1. 修復前執行 python -m unittest discover -v：5 個測試方法，5 個減法子案例失敗，exit code 1。
+   原始輸出：before-tests.log；退出碼：before-exit-code.txt。
+   首次輸出保留不動；其 traceback 中文路徑受主控台編碼影響而亂碼。
+2. 修復前依 workflow 執行 python -m unittest discover -s tests -v：相同 5 個減法子案例失敗，exit code 1。
+   輸出：before-ci-tests.log；退出碼：before-ci-exit-code.txt。
+   此次與後續測試啟用 PYTHONUTF8=1，僅處理輸出編碼。
+3. 修復後執行 python -m unittest discover -v：5 個測試全數通過，exit code 0。
+   輸出：after-tests.log；退出碼：after-exit-code.txt。
+4. 修復後依 workflow 執行 python -m unittest discover -s tests -v：5 個測試全數通過，exit code 0。
+   輸出：after-ci-tests.log；退出碼：after-ci-exit-code.txt。
+5. git diff --check 通過，exit code 0。
+   輸出：diff-check.log（成功時無輸出）；退出碼：diff-check-exit-code.txt。
+
+變更清單與完整性
+- calculator.py：僅修改 subtract 中的一個運算子，從 + 改成 -。
+- tests/test_calculator.py：未修改、未刪除，未新增 skip、expectedFailure 或弱化任何 assertion。
+- tests/__init__.py：未修改、未刪除。
+- .github/workflows/ci.yml：未修改，仍使用 Python 3.12 與 unittest discover -s tests -v。
+- .gitignore：未修改。
+- 未新增或修改依賴設定；本專案測試使用 Python 標準函式庫 unittest。
+- evidence/：新增本報告、真實前後測試紀錄、退出碼、Python 版本、前後程式副本、單行差異，以及未變動檔案的 SHA-256 與比對結果。
+- 測試執行產生的 __pycache__ 為現有 .gitignore 忽略的執行產物。
+- 未 commit、未 push，所有變更保留供比較。
+
+比對材料
+calculator-before.py / calculator-after.py：修復前後 calculator.py 的完整副本。
+repair.diff：唯一程式修復差異。
+unchanged-files-before.json / unchanged-files-after.json：測試檔、workflow 與 .gitignore 的 SHA-256。
+unchanged-files-verification.txt：上述檔案前後 SHA-256 完全相同的驗證結果。
+python-version.txt：實測 Python 版本。
+
+驗證範圍
+已在本機使用 workflow 的相同 unittest 指令，Python 3.12.14 執行成功。
+未觸發 GitHub Actions；不聲稱已驗證遠端 Ubuntu runner、checkout 或 setup-python action 的執行狀態。
