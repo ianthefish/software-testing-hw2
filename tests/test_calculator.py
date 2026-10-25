@@ -31,6 +31,11 @@ class TestCalculator(unittest.TestCase):
                 self.assertEqual(result, expected)
                 self.assertIsInstance(result, float)
 
+    def test_divide_by_zero_raises_value_error(self):
+        calc = Calculator()
+        with self.assertRaises(ValueError):
+            calc.divide(7, 0)
+
 
 if __name__ == "__main__":
     unittest.main()
