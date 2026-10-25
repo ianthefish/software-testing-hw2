@@ -1,0 +1,222 @@
+TIME=2026-10-25T21:29:24.407255+08:00
+CWD=C:\Users\ianyu\Desktop\軟測2\q6-review
+COMMAND=C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\.venv\Scripts\python.exe -m unittest discover -s tests -v
+
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ok
+test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok
+test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract)
+One test method defines the complete reviewed integer-input contract. ... 
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='modulo', a=7, b=3)
+One test method defines the complete reviewed integer-input contract. ... ERROR
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='modulo', a=-7, b=3)
+One test method defines the complete reviewed integer-input contract. ... ERROR
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='modulo', a=7, b=-3)
+One test method defines the complete reviewed integer-input contract. ... ERROR
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='modulo', a=-7, b=-3)
+One test method defines the complete reviewed integer-input contract. ... ERROR
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='modulo', a=0, b=3)
+One test method defines the complete reviewed integer-input contract. ... ERROR
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='modulo', a=6, b=3)
+One test method defines the complete reviewed integer-input contract. ... ERROR
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=2, b=3)
+One test method defines the complete reviewed integer-input contract. ... ERROR
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=-2, b=3)
+One test method defines the complete reviewed integer-input contract. ... ERROR
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=-2, b=4)
+One test method defines the complete reviewed integer-input contract. ... ERROR
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=5, b=0)
+One test method defines the complete reviewed integer-input contract. ... ERROR
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=0, b=0)
+One test method defines the complete reviewed integer-input contract. ... ERROR
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=2, b=-3)
+One test method defines the complete reviewed integer-input contract. ... ERROR
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=-2, b=-3)
+One test method defines the complete reviewed integer-input contract. ... ERROR
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=0, b=3)
+One test method defines the complete reviewed integer-input contract. ... ERROR
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='modulo', a=7, b=0, raises='ZeroDivisionError')
+One test method defines the complete reviewed integer-input contract. ... ERROR
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='modulo', a=0, b=0, raises='ZeroDivisionError')
+One test method defines the complete reviewed integer-input contract. ... ERROR
+  test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=0, b=-1, raises='ZeroDivisionError')
+One test method defines the complete reviewed integer-input contract. ... ERROR
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='modulo', a=7, b=3)
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 28, in test_modulo_and_power_contract
+    result = getattr(calc, operation)(a, b)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'modulo'
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='modulo', a=-7, b=3)
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 28, in test_modulo_and_power_contract
+    result = getattr(calc, operation)(a, b)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'modulo'
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='modulo', a=7, b=-3)
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 28, in test_modulo_and_power_contract
+    result = getattr(calc, operation)(a, b)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'modulo'
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='modulo', a=-7, b=-3)
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 28, in test_modulo_and_power_contract
+    result = getattr(calc, operation)(a, b)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'modulo'
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='modulo', a=0, b=3)
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 28, in test_modulo_and_power_contract
+    result = getattr(calc, operation)(a, b)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'modulo'
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='modulo', a=6, b=3)
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 28, in test_modulo_and_power_contract
+    result = getattr(calc, operation)(a, b)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'modulo'
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=2, b=3)
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 28, in test_modulo_and_power_contract
+    result = getattr(calc, operation)(a, b)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'power'
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=-2, b=3)
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 28, in test_modulo_and_power_contract
+    result = getattr(calc, operation)(a, b)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'power'
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=-2, b=4)
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 28, in test_modulo_and_power_contract
+    result = getattr(calc, operation)(a, b)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'power'
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=5, b=0)
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 28, in test_modulo_and_power_contract
+    result = getattr(calc, operation)(a, b)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'power'
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=0, b=0)
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 28, in test_modulo_and_power_contract
+    result = getattr(calc, operation)(a, b)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'power'
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=2, b=-3)
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 28, in test_modulo_and_power_contract
+    result = getattr(calc, operation)(a, b)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'power'
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=-2, b=-3)
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 28, in test_modulo_and_power_contract
+    result = getattr(calc, operation)(a, b)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'power'
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=0, b=3)
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 28, in test_modulo_and_power_contract
+    result = getattr(calc, operation)(a, b)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'power'
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='modulo', a=7, b=0, raises='ZeroDivisionError')
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 35, in test_modulo_and_power_contract
+    getattr(calc, operation)(a, b)
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'modulo'
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='modulo', a=0, b=0, raises='ZeroDivisionError')
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 35, in test_modulo_and_power_contract
+    getattr(calc, operation)(a, b)
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'modulo'
+
+======================================================================
+ERROR: test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract) (operation='power', a=0, b=-1, raises='ZeroDivisionError')
+One test method defines the complete reviewed integer-input contract.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-review\tests\test_q6.py", line 35, in test_modulo_and_power_contract
+    getattr(calc, operation)(a, b)
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'power'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+FAILED (errors=17)
+
+TEST_EXIT_CODE=1

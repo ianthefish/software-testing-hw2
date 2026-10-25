@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-25T21:29:24.407255+08:00",
+  "cwd": "C:\\Users\\ianyu\\Desktop\\軟測2\\q6-review",
+  "command": [
+    "C:\\Users\\ianyu\\Desktop\\軟測2\\software-testing-hw2\\.venv\\Scripts\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "returncode": 1,
+  "sha256": {
+    "calculator.py": "b41108f8f8d97f108c8325892b85439ff99b2f65d2ff3cf84ff89e85a7d04558",
+    "tests/__init__.py": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "tests/test_calculator.py": "045c6c120a9be3fb4366a4217550891050d732cde3a283a78c54e1d340049618",
+    "tests/test_q6.py": "9ffb801c921ba01c35dc286dfddf60d73521469dfc1c237fa0751433c8d1bb5a"
+  }
+}
