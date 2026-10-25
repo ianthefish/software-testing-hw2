@@ -1,0 +1,73 @@
+TIME=2026-10-25T21:24:52.428272+08:00
+CWD=C:\Users\ianyu\Desktop\軟測2\software-testing-hw2
+COMMAND=C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\.venv\Scripts\python.exe -m unittest discover -s tests -v
+
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... 
+  test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=9, b=4) ... ERROR
+  test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=4, b=9) ... ERROR
+  test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=-7, b=3) ... ERROR
+  test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=7, b=-3) ... ERROR
+  test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=-7, b=-3) ... ERROR
+  test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=0, b=0) ... ERROR
+
+======================================================================
+ERROR: test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=9, b=4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 16, in test_subtract_integers
+    self.assertEqual(calc.subtract(a, b), expected)
+                     ^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'subtract'
+
+======================================================================
+ERROR: test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=4, b=9)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 16, in test_subtract_integers
+    self.assertEqual(calc.subtract(a, b), expected)
+                     ^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'subtract'
+
+======================================================================
+ERROR: test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=-7, b=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 16, in test_subtract_integers
+    self.assertEqual(calc.subtract(a, b), expected)
+                     ^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'subtract'
+
+======================================================================
+ERROR: test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=7, b=-3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 16, in test_subtract_integers
+    self.assertEqual(calc.subtract(a, b), expected)
+                     ^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'subtract'
+
+======================================================================
+ERROR: test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=-7, b=-3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 16, in test_subtract_integers
+    self.assertEqual(calc.subtract(a, b), expected)
+                     ^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'subtract'
+
+======================================================================
+ERROR: test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=0, b=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 16, in test_subtract_integers
+    self.assertEqual(calc.subtract(a, b), expected)
+                     ^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'subtract'
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.003s
+
+FAILED (errors=6)
+
+TEST_EXIT_CODE=1

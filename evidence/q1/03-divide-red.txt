@@ -1,0 +1,75 @@
+TIME=2026-10-25T21:25:31.751998+08:00
+CWD=C:\Users\ianyu\Desktop\軟測2\software-testing-hw2
+COMMAND=C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\.venv\Scripts\python.exe -m unittest discover -s tests -v
+
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... 
+  test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) (a=7, b=2) ... ERROR
+  test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) (a=8, b=2) ... ERROR
+  test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) (a=-7, b=2) ... ERROR
+  test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) (a=7, b=-2) ... ERROR
+  test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) (a=-7, b=-2) ... ERROR
+  test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) (a=0, b=5) ... ERROR
+test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+
+======================================================================
+ERROR: test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) (a=7, b=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 30, in test_divide_returns_float
+    result = calc.divide(a, b)
+             ^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'divide'
+
+======================================================================
+ERROR: test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) (a=8, b=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 30, in test_divide_returns_float
+    result = calc.divide(a, b)
+             ^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'divide'
+
+======================================================================
+ERROR: test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) (a=-7, b=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 30, in test_divide_returns_float
+    result = calc.divide(a, b)
+             ^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'divide'
+
+======================================================================
+ERROR: test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) (a=7, b=-2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 30, in test_divide_returns_float
+    result = calc.divide(a, b)
+             ^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'divide'
+
+======================================================================
+ERROR: test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) (a=-7, b=-2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 30, in test_divide_returns_float
+    result = calc.divide(a, b)
+             ^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'divide'
+
+======================================================================
+ERROR: test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) (a=0, b=5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 30, in test_divide_returns_float
+    result = calc.divide(a, b)
+             ^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'divide'
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.003s
+
+FAILED (errors=6)
+
+TEST_EXIT_CODE=1

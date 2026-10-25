@@ -1,0 +1,74 @@
+TIME=2026-10-25T21:25:15.292384+08:00
+CWD=C:\Users\ianyu\Desktop\軟測2\software-testing-hw2
+COMMAND=C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\.venv\Scripts\python.exe -m unittest discover -s tests -v
+
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... 
+  test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) (a=6, b=7) ... ERROR
+  test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) (a=-6, b=7) ... ERROR
+  test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) (a=6, b=-7) ... ERROR
+  test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) (a=-6, b=-7) ... ERROR
+  test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) (a=0, b=7) ... ERROR
+  test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) (a=7, b=0) ... ERROR
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+
+======================================================================
+ERROR: test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) (a=6, b=7)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 23, in test_multiply_integers
+    self.assertEqual(calc.multiply(a, b), expected)
+                     ^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'multiply'
+
+======================================================================
+ERROR: test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) (a=-6, b=7)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 23, in test_multiply_integers
+    self.assertEqual(calc.multiply(a, b), expected)
+                     ^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'multiply'
+
+======================================================================
+ERROR: test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) (a=6, b=-7)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 23, in test_multiply_integers
+    self.assertEqual(calc.multiply(a, b), expected)
+                     ^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'multiply'
+
+======================================================================
+ERROR: test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) (a=-6, b=-7)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 23, in test_multiply_integers
+    self.assertEqual(calc.multiply(a, b), expected)
+                     ^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'multiply'
+
+======================================================================
+ERROR: test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) (a=0, b=7)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 23, in test_multiply_integers
+    self.assertEqual(calc.multiply(a, b), expected)
+                     ^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'multiply'
+
+======================================================================
+ERROR: test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) (a=7, b=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 23, in test_multiply_integers
+    self.assertEqual(calc.multiply(a, b), expected)
+                     ^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'multiply'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.004s
+
+FAILED (errors=6)
+
+TEST_EXIT_CODE=1

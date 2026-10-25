@@ -1,0 +1,27 @@
+TIME=2026-10-25T21:25:46.929681+08:00
+CWD=C:\Users\ianyu\Desktop\軟測2\software-testing-hw2
+COMMAND=C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\.venv\Scripts\python.exe -m unittest discover -s tests -v
+
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ERROR
+test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok
+test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+
+======================================================================
+ERROR: test_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\tests\test_calculator.py", line 37, in test_divide_by_zero_raises_value_error
+    calc.divide(7, 0)
+  File "C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\calculator.py", line 12, in divide
+    return a / b
+           ~~^~~
+ZeroDivisionError: division by zero
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (errors=1)
+
+TEST_EXIT_CODE=1

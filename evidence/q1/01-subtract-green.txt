@@ -1,0 +1,13 @@
+TIME=2026-10-25T21:25:12.826563+08:00
+CWD=C:\Users\ianyu\Desktop\軟測2\software-testing-hw2
+COMMAND=C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\.venv\Scripts\python.exe -m unittest discover -s tests -v
+
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+
+TEST_EXIT_CODE=0
