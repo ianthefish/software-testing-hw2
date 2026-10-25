@@ -15,6 +15,13 @@ class TestCalculator(unittest.TestCase):
             with self.subTest(a=a, b=b):
                 self.assertEqual(calc.subtract(a, b), expected)
 
+    def test_multiply_integers(self):
+        calc = Calculator()
+        for a, b, expected in [(6, 7, 42), (-6, 7, -42), (6, -7, -42),
+                               (-6, -7, 42), (0, 7, 0), (7, 0, 0)]:
+            with self.subTest(a=a, b=b):
+                self.assertEqual(calc.multiply(a, b), expected)
+
 
 if __name__ == "__main__":
     unittest.main()
