@@ -1,0 +1,13 @@
+diff --git a/calculator.py b/calculator.py
+index 52436ce..fe579be 100644
+--- a/calculator.py
++++ b/calculator.py
+@@ -3,7 +3,7 @@ class Calculator:
+         return a + b
+ 
+     def subtract(self, a, b):
+-        return a + b
++        return a - b
+ 
+     def multiply(self, a, b):
+         return a * b

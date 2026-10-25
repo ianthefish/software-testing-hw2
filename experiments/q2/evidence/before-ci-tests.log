@@ -1,0 +1,55 @@
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ok
+test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok
+test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... 
+  test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=9, b=4) ... FAIL
+  test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=4, b=9) ... FAIL
+  test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=-7, b=3) ... FAIL
+  test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=7, b=-3) ... FAIL
+  test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=-7, b=-3) ... FAIL
+
+======================================================================
+FAIL: test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=9, b=4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q2-blind-repair\tests\test_calculator.py", line 16, in test_subtract_integers
+    self.assertEqual(calc.subtract(a, b), expected)
+AssertionError: 13 != 5
+
+======================================================================
+FAIL: test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=4, b=9)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q2-blind-repair\tests\test_calculator.py", line 16, in test_subtract_integers
+    self.assertEqual(calc.subtract(a, b), expected)
+AssertionError: 13 != -5
+
+======================================================================
+FAIL: test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=-7, b=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q2-blind-repair\tests\test_calculator.py", line 16, in test_subtract_integers
+    self.assertEqual(calc.subtract(a, b), expected)
+AssertionError: -4 != -10
+
+======================================================================
+FAIL: test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=7, b=-3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q2-blind-repair\tests\test_calculator.py", line 16, in test_subtract_integers
+    self.assertEqual(calc.subtract(a, b), expected)
+AssertionError: 4 != 10
+
+======================================================================
+FAIL: test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) (a=-7, b=-3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q2-blind-repair\tests\test_calculator.py", line 16, in test_subtract_integers
+    self.assertEqual(calc.subtract(a, b), expected)
+AssertionError: -10 != -4
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=5)

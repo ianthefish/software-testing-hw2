@@ -1,0 +1,43 @@
+commit db453e7c7560ebf255a7946fefe5fc491ea23303
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:31:55+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:31:55+08:00
+
+    Q7: test first implementation with metamorphic relations
+
+ evidence/README.md           | 30 +++++++++++++++++++++++++
+ evidence/after.exitcode.txt  |  1 +
+ evidence/after.json          | 19 ++++++++++++++++
+ evidence/after.log           | 10 +++++++++
+ evidence/before.exitcode.txt |  1 +
+ evidence/before.json         | 19 ++++++++++++++++
+ evidence/before.log          | 21 ++++++++++++++++++
+ evidence/metamorphic.json    | 20 +++++++++++++++++
+ evidence/metamorphic.txt     | 21 ++++++++++++++++++
+ evidence/run_tests.py        | 31 ++++++++++++++++++++++++++
+ tests/test_metamorphic.py    | 52 ++++++++++++++++++++++++++++++++++++++++++++
+ 11 files changed, 225 insertions(+)
+
+commit deb2b0d670462ba043b2d43b6082950808371da9
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:31:51+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:31:51+08:00
+
+    Q7: preserve first implementation from tests alone
+
+ calculator.py | 19 +++++++++++++++++++
+ 1 file changed, 19 insertions(+)
+
+commit 017c11a1041a19cd1cd354d987375e8e587b1866
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:27:26+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:27:26+08:00
+
+    Q7: supply only tests from q1-complete
+
+ tests/__init__.py        |  1 +
+ tests/test_calculator.py | 41 +++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 42 insertions(+)
