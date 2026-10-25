@@ -6,6 +6,8 @@
 
 使用 Python 3.12。建立虛擬環境後安裝 requirements-dev.txt：
 
+這台電腦的 `python` / `py` 尚未能直接使用；已驗證的基礎 Python 是 `C:\Users\ianyu\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe`。第一次建立環境可執行 `& 'C:\Users\ianyu\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' -m venv .venv`，之後使用下列 `.venv` 指令。其他電腦可使用已安裝的 Python 3.12。
+
 ```powershell
 python -m venv .venv
 & .\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
@@ -31,7 +33,7 @@ Pop-Location
 - evidence/：實際 Red/Green 輸出、SHA-256、CI run metadata 與截圖。
 - experiments/q2/：新 session 的盲修復結果與證據。
 - experiments/q7/：只依 Q1 測試產生的首次 Calc 與後加的變形測試。
-- ai-usage/：逐字 prompts、完整可見回覆、工具呼叫及來源資訊。
+- ai-usage/：逐字 prompts、完整可見回覆、委派 prompt 及來源資訊。
 - output/pdf/：正式報告、程式與測試列印本、AI 使用紀錄附錄。
 
 Q1 完成點固定在 q1-complete；Q6 的測試提交 563359b 在實作提交 b1b377f 之前。Q2 的五次 CI 結果與連結列於 reports/Q2.md。完整提交歷史另以 Git log 與 bundle 隨繳交壓縮檔附上。

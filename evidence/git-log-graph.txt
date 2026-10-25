@@ -1,0 +1,26 @@
+* b890fd7 (HEAD -> main, tag: q3-code-complete, origin/main) Q3: enforce statement and branch coverage in local and cloud checks
+*   31333df Integrate reviewed Q6 modulo and power TDD
+|\  
+| * b657173 (tag: q6-complete, origin/codex/q6-tdd, codex/q6-tdd) Q6: preserve review, red-green evidence, and decisions
+| * b1b377f Q6 GREEN: implement reviewed modulo and power contract
+| * 563359b Q6 RED: commit contract after explicit human review
+* |   ada7fed Integrate Q2 CI repair experiment and Q7 tests-only experiment
+|\ \  
+| * | de29f94 (origin/codex/q2-lab, codex/q2-lab) Q2 Q7: preserve experiment inputs, results, CI evidence, and reports
+| * | 61036c6 (tag: q2-agent-result) Q2: apply fresh agents blind repair without changing tests
+| * | c921aec (tag: q2-broken-again) Q2: reintroduce identical fault for blind repair
+| * | a8e5c0c (tag: q2-reference-fixed) Q2: restore subtraction in reference repair
+| * | 2f2f59f (tag: q2-broken-first) Q2: introduce fault for first repair
+|/ /  
+* / c6b6caf (tag: q2-ci-green) Q2: run calculator tests in GitHub Actions
+|/  
+* 14ebcc7 (tag: q1-complete) Q1: preserve four TDD cycles and narrative
+* 32132ee Q1 GREEN 04: handle division by zero
+* b631553 Q1 RED 04: require ValueError for division by zero
+* 614df7f Q1 GREEN 03: implement true division
+* 1cb2c97 Q1 RED 03: require true division returning float
+* 54535ba Q1 GREEN 02: implement multiplication
+* 5c11076 Q1 RED 02: define multiplication of integers
+* 089ba50 Q1 GREEN 01: implement subtraction
+* 9dba640 Q1 RED 01: define subtraction of integers
+* 3f22082 Baseline: preserve originals and establish add-only calculator

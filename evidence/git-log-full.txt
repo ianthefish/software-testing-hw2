@@ -1,0 +1,335 @@
+commit b890fd7f3939e9d78a26d27ec856474e30cdd9f3
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:41:16+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:41:16+08:00
+
+    Q3: enforce statement and branch coverage in local and cloud checks
+
+ .coveragerc                      | 10 +++++++++
+ .github/workflows/ci.yml         |  9 +++++++-
+ README.md                        | 47 ++++++++++++++++++++++++++++++++++++++++
+ evidence/final-tests.json        | 20 +++++++++++++++++
+ evidence/final-tests.txt         | 18 +++++++++++++++
+ evidence/q3/coverage-report.json | 18 +++++++++++++++
+ evidence/q3/coverage-report.txt  | 11 ++++++++++
+ evidence/q3/coverage-tests.json  | 23 ++++++++++++++++++++
+ evidence/q3/coverage-tests.txt   | 18 +++++++++++++++
+ evidence/q3/coverage.json        |  1 +
+ evidence/q3/tool-version.txt     |  2 ++
+ reports/requirements.md          |  4 ++--
+ requirements-dev.txt             |  1 +
+ 13 files changed, 179 insertions(+), 3 deletions(-)
+
+commit de29f9433151fb2cdbffbe557f79cd85a7320006
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:39:56+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:39:56+08:00
+
+    Q2 Q7: preserve experiment inputs, results, CI evidence, and reports
+
+ evidence/q2/01-initial-ci.json                     | 78 ++++++++++++++++++++++
+ evidence/q2/02-broken-first-ci.json                | 78 ++++++++++++++++++++++
+ evidence/q2/02-broken-first-local.json             | 19 ++++++
+ evidence/q2/02-broken-first-local.txt              | 61 +++++++++++++++++
+ evidence/q2/03-reference-repair-ci.json            | 78 ++++++++++++++++++++++
+ evidence/q2/03-reference-repair-local.json         | 19 ++++++
+ evidence/q2/03-reference-repair-local.txt          | 16 +++++
+ evidence/q2/04-broken-again-ci.json                | 78 ++++++++++++++++++++++
+ evidence/q2/04-broken-again-local.json             | 19 ++++++
+ evidence/q2/04-broken-again-local.txt              | 61 +++++++++++++++++
+ evidence/q2/05-agent-repair-ci.json                | 78 ++++++++++++++++++++++
+ evidence/q2/05-agent-repair-local.json             | 19 ++++++
+ evidence/q2/05-agent-repair-local.txt              | 16 +++++
+ evidence/q2/agent-git-log.txt                      | 53 +++++++++++++++
+ evidence/q2/agent-tests-workflow-diff.txt          |  0
+ evidence/q2/identical-fault-diff.txt               |  0
+ evidence/q7/git-log.txt                            | 43 ++++++++++++
+ experiments/q2/.github/workflows/ci.yml            | 20 ++++++
+ experiments/q2/.gitignore                          |  9 +++
+ experiments/q2/calculator.py                       | 15 +++++
+ experiments/q2/evidence/REPORT.txt                 | 47 +++++++++++++
+ experiments/q2/evidence/after-ci-exit-code.txt     |  1 +
+ experiments/q2/evidence/after-ci-tests.log         | 10 +++
+ experiments/q2/evidence/after-exit-code.txt        |  1 +
+ experiments/q2/evidence/after-tests.log            | 10 +++
+ experiments/q2/evidence/before-ci-exit-code.txt    |  1 +
+ experiments/q2/evidence/before-ci-tests.log        | 55 +++++++++++++++
+ experiments/q2/evidence/before-exit-code.txt       |  1 +
+ experiments/q2/evidence/before-tests.log           | 55 +++++++++++++++
+ experiments/q2/evidence/calculator-after.py        | 15 +++++
+ experiments/q2/evidence/calculator-before.py       | 15 +++++
+ experiments/q2/evidence/diff-check-exit-code.txt   |  1 +
+ experiments/q2/evidence/diff-check.log             |  0
+ experiments/q2/evidence/python-version.txt         |  1 +
+ experiments/q2/evidence/repair.diff                | 13 ++++
+ experiments/q2/evidence/unchanged-files-after.json | 18 +++++
+ .../q2/evidence/unchanged-files-before.json        | 18 +++++
+ .../q2/evidence/unchanged-files-verification.txt   |  1 +
+ experiments/q2/tests/__init__.py                   |  1 +
+ experiments/q2/tests/test_calculator.py            | 41 ++++++++++++
+ experiments/q7/calculator.py                       | 19 ++++++
+ experiments/q7/evidence/README.md                  | 30 +++++++++
+ experiments/q7/evidence/after.exitcode.txt         |  1 +
+ experiments/q7/evidence/after.json                 | 19 ++++++
+ experiments/q7/evidence/after.log                  | 10 +++
+ experiments/q7/evidence/before.exitcode.txt        |  1 +
+ experiments/q7/evidence/before.json                | 19 ++++++
+ experiments/q7/evidence/before.log                 | 21 ++++++
+ experiments/q7/evidence/metamorphic.json           | 20 ++++++
+ experiments/q7/evidence/metamorphic.txt            | 21 ++++++
+ experiments/q7/evidence/run_tests.py               | 31 +++++++++
+ experiments/q7/tests/__init__.py                   |  1 +
+ experiments/q7/tests/test_calculator.py            | 41 ++++++++++++
+ experiments/q7/tests/test_metamorphic.py           | 52 +++++++++++++++
+ reports/Q2.md                                      | 39 +++++++++++
+ reports/Q7.md                                      | 33 +++++++++
+ 56 files changed, 1423 insertions(+)
+
+commit 31333df50e8c5ca94ab68abf43a9e3660e4b4e73
+Merge: ada7fed b657173
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:39:56+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:39:56+08:00
+
+    Integrate reviewed Q6 modulo and power TDD
+
+commit ada7fed19e9fcd6dbd077ea23ee32196f94d3244
+Merge: c6b6caf de29f94
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:39:56+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:39:56+08:00
+
+    Integrate Q2 CI repair experiment and Q7 tests-only experiment
+
+commit 61036c609587243d1a5787232955db730a7b3842
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:36:28+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:36:28+08:00
+
+    Q2: apply fresh agents blind repair without changing tests
+
+ calculator.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit c921aec9b30b2c49a103824682a4225adf5be5e2
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:33:06+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:33:06+08:00
+
+    Q2: reintroduce identical fault for blind repair
+
+ calculator.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b6571735f14660bda9b41cbc010a532027da4c1a
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:32:58+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:32:58+08:00
+
+    Q6: preserve review, red-green evidence, and decisions
+
+ evidence/q6/01-contract-green.json |  20 ++++
+ evidence/q6/01-contract-green.txt  |  18 +++
+ evidence/q6/01-contract-red.json   |  20 ++++
+ evidence/q6/01-contract-red.txt    | 222 +++++++++++++++++++++++++++++++++++++
+ reports/Q6.md                      |  36 ++++++
+ 5 files changed, 316 insertions(+)
+
+commit a8e5c0c312dbe27e4a106d7dcec7477bf075af8f
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:31:59+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:31:59+08:00
+
+    Q2: restore subtraction in reference repair
+
+ calculator.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b1b377fb6cd245adc1812158e155087b39cabc2f
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:30:57+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:30:57+08:00
+
+    Q6 GREEN: implement reviewed modulo and power contract
+
+ calculator.py | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit 2f2f59f80161c11a93b4facd1a49036f0badd55f
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:30:32+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:30:32+08:00
+
+    Q2: introduce fault for first repair
+
+ calculator.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 563359bb8ba36d246f078c80ed8bf2282c62a2bd
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:30:29+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:30:29+08:00
+
+    Q6 RED: commit contract after explicit human review
+
+ evidence/q6/review.txt | 15 +++++++++++++++
+ tests/test_q6.py       | 39 +++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 54 insertions(+)
+
+commit c6b6caff963bc8538ec194d024d8ef4ddddfdb06
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:27:30+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:27:30+08:00
+
+    Q2: run calculator tests in GitHub Actions
+
+ .github/workflows/ci.yml | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+
+commit 14ebcc7814d034861a2c6e6fbceb1a53d9c307bf
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:26:49+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:26:49+08:00
+
+    Q1: preserve four TDD cycles and narrative
+
+ evidence/baseline/add-only.json       | 19 +++++++++
+ evidence/baseline/add-only.txt        | 12 ++++++
+ evidence/q1/01-subtract-green.json    | 19 +++++++++
+ evidence/q1/01-subtract-green.txt     | 13 ++++++
+ evidence/q1/01-subtract-red.json      | 19 +++++++++
+ evidence/q1/01-subtract-red.txt       | 73 ++++++++++++++++++++++++++++++++++
+ evidence/q1/02-multiply-green.json    | 19 +++++++++
+ evidence/q1/02-multiply-green.txt     | 14 +++++++
+ evidence/q1/02-multiply-red.json      | 19 +++++++++
+ evidence/q1/02-multiply-red.txt       | 74 ++++++++++++++++++++++++++++++++++
+ evidence/q1/03-divide-green.json      | 19 +++++++++
+ evidence/q1/03-divide-green.txt       | 15 +++++++
+ evidence/q1/03-divide-red.json        | 19 +++++++++
+ evidence/q1/03-divide-red.txt         | 75 +++++++++++++++++++++++++++++++++++
+ evidence/q1/04-divide-zero-green.json | 19 +++++++++
+ evidence/q1/04-divide-zero-green.txt  | 16 ++++++++
+ evidence/q1/04-divide-zero-red.json   | 19 +++++++++
+ evidence/q1/04-divide-zero-red.txt    | 27 +++++++++++++
+ reports/Q1.md                         | 37 +++++++++++++++++
+ 19 files changed, 527 insertions(+)
+
+commit 32132eeb3ccfbc8f7365933726070157954f0dee
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:26:49+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:26:49+08:00
+
+    Q1 GREEN 04: handle division by zero
+
+ calculator.py | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit b63155379a783d18749097506ef82efdf7d51cdf
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:25:47+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:25:47+08:00
+
+    Q1 RED 04: require ValueError for division by zero
+
+ tests/test_calculator.py | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 614df7feb1dc75ca6cca33f0bfea48e50ee44aed
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:25:44+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:25:44+08:00
+
+    Q1 GREEN 03: implement true division
+
+ calculator.py | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 1cb2c97f1f96d5f7f991e5219bf12762fa0641d7
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:25:32+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:25:32+08:00
+
+    Q1 RED 03: require true division returning float
+
+ tests/test_calculator.py | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+commit 54535ba6c81112c323a511e35500b927e445ad00
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:25:29+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:25:29+08:00
+
+    Q1 GREEN 02: implement multiplication
+
+ calculator.py | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 5c11076c81cf0bda75133eec87151d8af3a9a81a
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:25:15+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:25:15+08:00
+
+    Q1 RED 02: define multiplication of integers
+
+ tests/test_calculator.py | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit 089ba50c23335aa8a3ee9e867f3766139f18eb43
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:25:13+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:25:13+08:00
+
+    Q1 GREEN 01: implement subtraction
+
+ calculator.py | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 9dba64005a4769eed803817968f7f963ca64a4a7
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:24:52+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:24:52+08:00
+
+    Q1 RED 01: define subtraction of integers
+
+ tests/test_calculator.py | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit 3f220823a52c089efbe171dffa6894f05b1203a9
+Author:     ianthefish <ianfish1111@gmail.com>
+AuthorDate: 2026-10-25T21:23:51+08:00
+Commit:     ianthefish <ianfish1111@gmail.com>
+CommitDate: 2026-10-25T21:23:51+08:00
+
+    Baseline: preserve originals and establish add-only calculator
+
+ .gitignore                      |   9 +++++++++
+ calculator.py                   |   4 ++++
+ original/Calc.py                |  14 ++++++++++++++
+ original/CalcTDD (AI agent).pdf | Bin 0 -> 101317 bytes
+ original/CalcTest.py            |  11 +++++++++++
+ reports/requirements.md         |  41 +++++++++++++++++++++++++++++++++++++++
+ tests/__init__.py               |   1 +
+ tests/test_calculator.py        |  13 +++++++++++++
+ tools/record_run.py             |  42 ++++++++++++++++++++++++++++++++++++++++
+ 9 files changed, 135 insertions(+)

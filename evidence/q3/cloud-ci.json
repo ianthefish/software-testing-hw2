@@ -1,0 +1,102 @@
+[
+  {
+    "id": 40198754908,
+    "name": "Calculator CI",
+    "head_sha": "b890fd7f3939e9d78a26d27ec856474e30cdd9f3",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/ianthefish/software-testing-hw2/actions/runs/40198754908",
+    "created_at": "2026-10-25T13:41:23Z",
+    "updated_at": "2026-10-25T13:41:36Z",
+    "jobs": [
+      {
+        "name": "test",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/ianthefish/software-testing-hw2/actions/runs/40198754908/job/121185206182",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-10-25T13:41:26Z",
+            "completed_at": "2026-10-25T13:41:27Z"
+          },
+          {
+            "name": "Run actions/checkout@v6",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-10-25T13:41:27Z",
+            "completed_at": "2026-10-25T13:41:28Z"
+          },
+          {
+            "name": "Run actions/setup-python@v6",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-10-25T13:41:28Z",
+            "completed_at": "2026-10-25T13:41:28Z"
+          },
+          {
+            "name": "Install verification tool",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-10-25T13:41:28Z",
+            "completed_at": "2026-10-25T13:41:31Z"
+          },
+          {
+            "name": "Run calculator tests with branch coverage",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-10-25T13:41:31Z",
+            "completed_at": "2026-10-25T13:41:32Z"
+          },
+          {
+            "name": "Require full calculator coverage",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-10-25T13:41:32Z",
+            "completed_at": "2026-10-25T13:41:32Z"
+          },
+          {
+            "name": "Check preserved tests-only agent implementation",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-10-25T13:41:32Z",
+            "completed_at": "2026-10-25T13:41:32Z"
+          },
+          {
+            "name": "Post Run actions/setup-python@v6",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 13,
+            "started_at": "2026-10-25T13:41:32Z",
+            "completed_at": "2026-10-25T13:41:32Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v6",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14,
+            "started_at": "2026-10-25T13:41:32Z",
+            "completed_at": "2026-10-25T13:41:32Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15,
+            "started_at": "2026-10-25T13:41:32Z",
+            "completed_at": "2026-10-25T13:41:32Z"
+          }
+        ]
+      }
+    ]
+  }
+]

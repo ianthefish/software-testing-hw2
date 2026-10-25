@@ -1,0 +1,9 @@
+# Preserve binary artifacts and the byte-level provenance of saved output.
+*.pdf binary
+*.jpg binary
+*.png binary
+*.zip binary
+*.bundle binary
+evidence/** -text
+experiments/*/evidence/** -text
+ai-usage/** -text

@@ -1,0 +1,229 @@
+{
+  "timestamp_utc": "2026-10-25T14:01:50.774119+00:00",
+  "scope": "Evidence consistency only; does not establish independent human authorship.",
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "Q1 cycle 1: tests precede implementation",
+      "passed": true,
+      "detail": {
+        "red": "9dba640",
+        "green": "089ba50"
+      }
+    },
+    {
+      "name": "Q1 cycle 2: tests precede implementation",
+      "passed": true,
+      "detail": {
+        "red": "5c11076",
+        "green": "54535ba"
+      }
+    },
+    {
+      "name": "Q1 cycle 3: tests precede implementation",
+      "passed": true,
+      "detail": {
+        "red": "1cb2c97",
+        "green": "614df7f"
+      }
+    },
+    {
+      "name": "Q1 cycle 4: tests precede implementation",
+      "passed": true,
+      "detail": {
+        "red": "b631553",
+        "green": "32132ee"
+      }
+    },
+    {
+      "name": "evidence/q1/01-subtract-green.json",
+      "passed": true,
+      "detail": {
+        "expected_exit": 0,
+        "actual_exit": 0
+      }
+    },
+    {
+      "name": "evidence/q1/01-subtract-red.json",
+      "passed": true,
+      "detail": {
+        "expected_exit": 1,
+        "actual_exit": 1
+      }
+    },
+    {
+      "name": "evidence/q1/02-multiply-green.json",
+      "passed": true,
+      "detail": {
+        "expected_exit": 0,
+        "actual_exit": 0
+      }
+    },
+    {
+      "name": "evidence/q1/02-multiply-red.json",
+      "passed": true,
+      "detail": {
+        "expected_exit": 1,
+        "actual_exit": 1
+      }
+    },
+    {
+      "name": "evidence/q1/03-divide-green.json",
+      "passed": true,
+      "detail": {
+        "expected_exit": 0,
+        "actual_exit": 0
+      }
+    },
+    {
+      "name": "evidence/q1/03-divide-red.json",
+      "passed": true,
+      "detail": {
+        "expected_exit": 1,
+        "actual_exit": 1
+      }
+    },
+    {
+      "name": "evidence/q1/04-divide-zero-green.json",
+      "passed": true,
+      "detail": {
+        "expected_exit": 0,
+        "actual_exit": 0
+      }
+    },
+    {
+      "name": "evidence/q1/04-divide-zero-red.json",
+      "passed": true,
+      "detail": {
+        "expected_exit": 1,
+        "actual_exit": 1
+      }
+    },
+    {
+      "name": "Q6 separate test and implementation commits",
+      "passed": true,
+      "detail": {
+        "test": "563359b",
+        "implementation": "b1b377f"
+      }
+    },
+    {
+      "name": "Q6 approved test unchanged",
+      "passed": true,
+      "detail": "Compared the approved commit blob with the final test file (LF-normalized)."
+    },
+    {
+      "name": "Q6 no implementation in test commit",
+      "passed": true,
+      "detail": "Both method definitions absent before the implementation commit."
+    },
+    {
+      "name": "Q6 actual review preserved",
+      "passed": true,
+      "detail": "Review text is present in both the record and the user-message export."
+    },
+    {
+      "name": "Q6 red",
+      "passed": true,
+      "detail": {
+        "exit": 1
+      }
+    },
+    {
+      "name": "Q6 green",
+      "passed": true,
+      "detail": {
+        "exit": 0
+      }
+    },
+    {
+      "name": "Q2 identical faults",
+      "passed": true,
+      "detail": "Compared calculator, tests, and workflow at the two fault tags."
+    },
+    {
+      "name": "Q2 blind repair changes calculator only",
+      "passed": true,
+      "detail": "Evidence files are outside the product/test/workflow comparison."
+    },
+    {
+      "name": "Q2 five completed cloud results",
+      "passed": true,
+      "detail": [
+        "success",
+        "failure",
+        "success",
+        "failure",
+        "success"
+      ]
+    },
+    {
+      "name": "Q7 received original Q1 test unchanged",
+      "passed": true,
+      "detail": "Compared the Q1 tag with the preserved Q7 test."
+    },
+    {
+      "name": "Q7 initial input contains only tests",
+      "passed": true,
+      "detail": "Checked the independent project's initial tree."
+    },
+    {
+      "name": "Q7 first generated calculator preserved",
+      "passed": true,
+      "detail": {
+        "first_commit": "deb2b0d670462ba043b2d43b6082950808371da9"
+      }
+    },
+    {
+      "name": "Unchanged original: Calc.py",
+      "passed": true,
+      "detail": {
+        "sha256": "d761cbbf46fff814c150f70efe2d4af5986ed529def3cb185f6ed4ec54df630e"
+      }
+    },
+    {
+      "name": "Unchanged original: CalcTest.py",
+      "passed": true,
+      "detail": {
+        "sha256": "abc50d42015e5184bdc65af7419f6016d446041955d33c6587d9e47fe6c636e8"
+      }
+    },
+    {
+      "name": "Unchanged original: CalcTDD (AI agent).pdf",
+      "passed": true,
+      "detail": {
+        "sha256": "f254a7847feec220fc38e2c0633358eb2c8249d852ab6e639626fcbdd30dce50"
+      }
+    },
+    {
+      "name": "Coverage evidence",
+      "passed": true,
+      "detail": {
+        "covered_lines": 15,
+        "num_statements": 15,
+        "percent_covered": 100.0,
+        "percent_covered_display": "100",
+        "missing_lines": 0,
+        "excluded_lines": 0,
+        "percent_statements_covered": 100.0,
+        "percent_statements_covered_display": "100",
+        "num_branches": 2,
+        "num_partial_branches": 0,
+        "covered_branches": 2,
+        "missing_branches": 0,
+        "percent_branches_covered": 100.0,
+        "percent_branches_covered_display": "100"
+      }
+    },
+    {
+      "name": "Verified functionality unchanged during reporting",
+      "passed": true,
+      "detail": "Compared the working files with the successful coverage CI commit."
+    },
+    {
+      "name": "No protected ciphertext substituted for AI prompts",
+      "passed": true,
+      "detail": []
+    }
+  ]
+}

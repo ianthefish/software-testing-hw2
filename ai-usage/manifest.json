@@ -1,0 +1,41 @@
+[
+  {
+    "label": "main-session",
+    "session_id": "01a17333-5880-7563-ba72-a3f6c611f448",
+    "tool": "Codex Desktop",
+    "models": [
+      "gpt-6-astra"
+    ],
+    "cli_version": "0.162.0-alpha.17.2",
+    "model_snapshot_version": "Not provided",
+    "cutoff_utc": "2026-10-25T14:01:47.346Z",
+    "message_count": 17,
+    "tool_call_count": 60
+  },
+  {
+    "label": "Q7-new-agent",
+    "session_id": "01a1733e-f564-7b82-89b6-dcc58768e325",
+    "tool": "Codex Desktop",
+    "models": [
+      "gpt-6-astra"
+    ],
+    "cli_version": "0.162.0-alpha.17.2",
+    "model_snapshot_version": "Not provided",
+    "cutoff_utc": "2026-10-25T13:29:18.113Z",
+    "message_count": 4,
+    "tool_call_count": 5
+  },
+  {
+    "label": "Q2-new-agent",
+    "session_id": "01a17344-86fa-7550-9cd7-f8c37c6237d9",
+    "tool": "Codex Desktop",
+    "models": [
+      "gpt-6-astra"
+    ],
+    "cli_version": "0.162.0-alpha.17.2",
+    "model_snapshot_version": "Not provided",
+    "cutoff_utc": "2026-10-25T13:36:05.436Z",
+    "message_count": 5,
+    "tool_call_count": 9
+  }
+]
