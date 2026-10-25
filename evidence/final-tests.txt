@@ -1,0 +1,18 @@
+TIME=2026-10-25T21:41:15.729756+08:00
+CWD=C:\Users\ianyu\Desktop\軟測2\software-testing-hw2
+COMMAND=C:\Users\ianyu\Desktop\軟測2\software-testing-hw2\.venv\Scripts\python.exe -m unittest discover -s tests -v
+
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ok
+test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok
+test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract)
+One test method defines the complete reviewed integer-input contract. ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+
+TEST_EXIT_CODE=0
