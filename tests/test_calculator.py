@@ -22,6 +22,15 @@ class TestCalculator(unittest.TestCase):
             with self.subTest(a=a, b=b):
                 self.assertEqual(calc.multiply(a, b), expected)
 
+    def test_divide_returns_float(self):
+        calc = Calculator()
+        for a, b, expected in [(7, 2, 3.5), (8, 2, 4.0), (-7, 2, -3.5),
+                               (7, -2, -3.5), (-7, -2, 3.5), (0, 5, 0.0)]:
+            with self.subTest(a=a, b=b):
+                result = calc.divide(a, b)
+                self.assertEqual(result, expected)
+                self.assertIsInstance(result, float)
+
 
 if __name__ == "__main__":
     unittest.main()
