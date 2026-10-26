@@ -1,0 +1,20 @@
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ok
+test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok
+test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+test_modulo_negative_dividend (test_q6_sequential.TestSequentialQ6.test_modulo_negative_dividend) ... ERROR
+
+======================================================================
+ERROR: test_modulo_negative_dividend (test_q6_sequential.TestSequentialQ6.test_modulo_negative_dividend)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-sequential-redo\tests\test_q6_sequential.py", line 8, in test_modulo_negative_dividend
+    self.assertEqual(Calculator().modulo(-7, 3), 2)
+                     ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'modulo'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+FAILED (errors=1)
