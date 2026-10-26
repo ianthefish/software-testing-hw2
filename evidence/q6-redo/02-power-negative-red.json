@@ -1,0 +1,18 @@
+{
+  "timestamp_utc": "2026-10-26T04:51:39.891214+00:00",
+  "command": [
+    "C:\\Users\\ianyu\\Desktop\\軟測2\\software-testing-hw2\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "returncode": 1,
+  "output_sha256": "ac6ea85cefca6b5faa62af11f057849e0ae188bbd19e3e23800f295a137548d3",
+  "test_sha256": "c2f2c28aa43c7ec4bbe632a0d15066c249082c06439db2f6a71849de9a533f11",
+  "review_status": "pending",
+  "power_implementation_exists": false
+}

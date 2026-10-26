@@ -1,0 +1,21 @@
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ok
+test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok
+test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+test_modulo_negative_dividend (test_q6_sequential.TestSequentialQ6.test_modulo_negative_dividend) ... ok
+test_power_negative_exponent (test_q6_sequential.TestSequentialQ6.test_power_negative_exponent) ... ERROR
+
+======================================================================
+ERROR: test_power_negative_exponent (test_q6_sequential.TestSequentialQ6.test_power_negative_exponent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ianyu\Desktop\軟測2\q6-sequential-redo\tests\test_q6_sequential.py", line 11, in test_power_negative_exponent
+    result = Calculator().power(2, -3)
+             ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Calculator' object has no attribute 'power'
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+FAILED (errors=1)
