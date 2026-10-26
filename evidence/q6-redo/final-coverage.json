@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-10-26T04:55:17.460753+00:00",
+  "command": [
+    "C:\\Users\\ianyu\\Desktop\\軟測2\\software-testing-hw2\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "coverage",
+    "report",
+    "--fail-under=100"
+  ],
+  "cwd": "C:\\Users\\ianyu\\Desktop\\軟測2\\q6-sequential-redo",
+  "returncode": 0,
+  "output_sha256": "0e65154c0573eed9e57fbae229dcf5e869ecb2278be25a3b4ee3d791cb868d74"
+}

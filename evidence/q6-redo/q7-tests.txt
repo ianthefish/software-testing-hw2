@@ -1,0 +1,15 @@
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ok
+test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok
+test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+test_add_subtract_inverse (test_metamorphic.TestMetamorphicRelations.test_add_subtract_inverse) ... ok
+test_multiplication_distributes_over_addition (test_metamorphic.TestMetamorphicRelations.test_multiplication_distributes_over_addition) ... ok
+test_multiply_divide_inverse (test_metamorphic.TestMetamorphicRelations.test_multiply_divide_inverse) ... ok
+test_seeded_large_integer_relations (test_metamorphic.TestMetamorphicRelations.test_seeded_large_integer_relations) ... ok
+test_subtraction_antisymmetry (test_metamorphic.TestMetamorphicRelations.test_subtraction_antisymmetry) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.132s
+
+OK

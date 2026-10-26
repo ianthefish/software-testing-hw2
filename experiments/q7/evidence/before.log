@@ -1,0 +1,21 @@
+test_calculator (unittest.loader._FailedTest.test_calculator) ... ERROR
+
+======================================================================
+ERROR: test_calculator (unittest.loader._FailedTest.test_calculator)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_calculator
+Traceback (most recent call last):
+  File "C:\Users\ianyu\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ianyu\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\loader.py", line 339, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\ianyu\Desktop\³n´ú2\q7-tests-only\tests\test_calculator.py", line 3, in <module>
+    from calculator import Calculator
+ModuleNotFoundError: No module named 'calculator'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

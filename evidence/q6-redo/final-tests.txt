@@ -1,0 +1,14 @@
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_divide_by_zero_raises_value_error (test_calculator.TestCalculator.test_divide_by_zero_raises_value_error) ... ok
+test_divide_returns_float (test_calculator.TestCalculator.test_divide_returns_float) ... ok
+test_multiply_integers (test_calculator.TestCalculator.test_multiply_integers) ... ok
+test_subtract_integers (test_calculator.TestCalculator.test_subtract_integers) ... ok
+test_modulo_and_power_contract (test_q6.TestAgenticContract.test_modulo_and_power_contract)
+One test method defines the complete reviewed integer-input contract. ... ok
+test_modulo_negative_dividend (test_q6_sequential.TestSequentialQ6.test_modulo_negative_dividend) ... ok
+test_power_negative_exponent (test_q6_sequential.TestSequentialQ6.test_power_negative_exponent) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.002s
+
+OK

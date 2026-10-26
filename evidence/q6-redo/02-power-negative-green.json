@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-10-26T04:53:21.246507+00:00",
+  "command": [
+    "C:\\Users\\ianyu\\Desktop\\軟測2\\software-testing-hw2\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "returncode": 0,
+  "output_sha256": "f66a89765ef9111a47db6d6934618982193c474475ccc7551e2f4cc86e39b455"
+}
